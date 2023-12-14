@@ -25,6 +25,8 @@
 
 {{ define "main" }}
 
+  {{ .Content }}
+
   {{ range .Paginator.Pages }}
     <article>
       {{ partial "heading.html" . }}
